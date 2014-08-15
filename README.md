@@ -31,4 +31,3 @@ Installation
 #### File Manifest ####
 - README.md
 - schedule_break.py
--
