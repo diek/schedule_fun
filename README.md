@@ -23,7 +23,7 @@ Create a program that schedules breaks throughout the day reminding the hard wor
 Installation
 ------------
 #### Program Requirements
-- Python 3.4
+- Python 2.7.8
 
 
 
