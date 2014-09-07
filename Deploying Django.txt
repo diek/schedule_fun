@@ -1,0 +1,21 @@
+Here several options for deploying django
+I am sure the experts here have their own recipes for deploying django. Daniel Greenfeld tells me that the most common approach is to use nginx + uwsgi. But like anything there are various approaches to deployment. Here are several. I will add a windows version when I find a good one. I have no experience with windows. I use ubuntu for my servers, but that is just me. I like it because when something goes wrong I can almost always find the answer myself or easily get help. If you go to the Digital Ocean site, web hosting or Linode, They have all kinds of tutorials on creating a server using ubuntu, debian, linux and other distros, With nginx or apache and django.
+1. Two Scoops of Django: Best Practices For Django 1.6 by Daniel Roy Greenfeld and Audrey Roy The book has a chapter on the topic, it is available from Daniel's websitehttp://twoscoopspress.com/collections/everything/products/two- scoops-of-django-1-6 or Amazonhttp://www.amazon.com/Two-Scoops- Django-Best-Practices/dp/098146730X.
+
+2. The offical documentation.
+https://docs.djangoproject.com/en/1.6/howto/deployment/
+
+3. Setting up Django with Nginx, Gunicorn, virtualenv, supervisor and PostgreSQL - Michał Karzyński. I like this detailed but simple step-by- step: http://michal.karzynski.pl/blog/2013/06/09/django-nginx-gunicorn- virtualenv-supervisor/
+
+4. Anish recommends this approach, "I recommend uWsgi [with] uWsgi there is no need of Supervisor to run as service "http://eshlox.net/en/2012/09/11/nginx-uwsgi-virtualenv-and-django- ubuntu-1204/
+
+5. Rocon recommended cherokee. http://cherokee- project.com/doc/cookbook_django.html
+
+6. From Codeship, Deploy Django on Apache with Virtualenv and mod_wsgi. http://thecodeship.com/deployment/deploy-django-apache- virtualenv-and-mod_wsgi/
+
+7. Here is a very detailed overview of the process. http://rogueleaderr.com/post/65157477648/the-idiomatic-guide-to- deploying-django-in-production
+
+8. Heroku is a perfect spot to try out your deployment skills, it is free. https://devcenter.heroku.com/articles/getting-started-with-django
+If you have an comments or suggestions please let me know.
+
+9. Eduardo Basílio recommends, Deploying a Django app on Amazon EC2 instance. - Agiliq Blog | Django web app development. http://tinyurl.com/DjangoAppAmazonEC2Instance

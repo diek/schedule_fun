@@ -1,17 +1,29 @@
 import webbrowser
 import time
+import random
 
 
-def take_break(num_breaks, tunes):
+def get_songs():
+    songs = []
+    fname = 'song_list.txt'
+    with open(fname) as fh:
+        for line in fh:
+            songs.append(line)
+    return songs
+
+
+def take_break(num_breaks):
     count = 0
-    print "Current time " + time.ctime()
+    tunes = get_songs()
+    num_tunes = len(tunes) - 1
     while count < num_breaks:
-        time.sleep(2*60*60)
-        webbrowser.open(tunes[count])
+        # time.sleep(2*60*60)
+        time.sleep(5)
+        song_index = random.randint(0, num_tunes)
+        print "Break time " + time.ctime()
+        webbrowser.open(tunes[song_index])
         count += 1
 
-song1 = "https://www.youtube.com/watch?v=Gp-PKmbcF7c#t=206"
-song2 = "https://www.youtube.com/watch?v=20S_kwNb4rg"
-song3 = "https://www.youtube.com/watch?v=Bayek5lLZWY"
-song_list = [song1, song2, song3]
-take_break(3, song_list)
+
+requested_breaks = int(raw_input('How many breaks should the dude get? '))
+take_break(requested_breaks)
